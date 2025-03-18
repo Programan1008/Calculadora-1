@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeeea3;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+.flexbox-base {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+}
+
+.calculadora {
+    width: 320px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.visor {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.visor__input {
+    color: white;
+    text-align: right;
+    font-size: 48px;
+    padding: 20px 10px;
+    min-height: 60px;
+    overflow-x: auto;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+.botones__contenedor,
+.operadores--basicos {
+    flex-direction: column;
+}
+
+.botones__contenedor {
+    width: 75%;
+}
+
+.operadores--basicos {
+    width: 25%;
+    align-items: center;
+}
+
+.operadores--especiales,
+.operadores--numeros {
+    flex-wrap: wrap;
+}
+
+.operadores--numeros {
+    flex-direction: row-reverse;
+}
+
+.boton-container {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+}
+
+.boton-container.doble {
+    width: 150px;
+}
+
+.boton {
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton:focus {
+    outline: 0;
+}
+
+.operadores--especiales .boton {
+    background-color: #a5a5a5;
+    color: black;
+}
+
+.operadores--basicos .boton {
+    background-color: #f69a3c;
+    color: white;
+}
+
+.boton-container.doble .boton {
+    width: 100%;
+}
+
+.boton:hover {
+    background-color: #444;
+}
+
+.operadores--basicos .boton:hover {
+    background-color: #ffab4c;
+}
+
+.operadores--especiales .boton:hover {
+    background-color: #b5b5b5;
+}
