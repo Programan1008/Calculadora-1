@@ -14,7 +14,8 @@ Este es un proyecto de una calculadora simple desarrollada con HTML, CSS y JavaS
 
 ## Captura de Pantalla
 
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/8e7a0811-b678-4b0c-8e06-d3421b74180f)
+
 
 ## Cómo Usar
 
